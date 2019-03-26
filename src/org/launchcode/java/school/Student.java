@@ -9,8 +9,8 @@ public class Student {
     private double gpa;
     Scanner in = new Scanner(System.in);
 
-    public void setName() {
-        String name = this.name;
+    public void setName(String tempName) {
+        this.name = tempName;
     }
 
     public String getName() {
@@ -40,6 +40,7 @@ public class Student {
     public double getGpa() {
         return gpa;
     }
+
     public Student(String name, int studentId, int numberOfCredits, double gpa) {
         this.name = name;
         this.studentId = studentId;
